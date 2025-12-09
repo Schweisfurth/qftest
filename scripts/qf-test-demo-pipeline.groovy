@@ -22,21 +22,22 @@ pipeline {
 
         
     
-        stage('Run QF-Test') {
+        stage('Run QF-Test-Demo') {
             steps {
-                sh """
-                QFTEST_BIN="C:/Program Files/QFS/QF-Test/qftest-9.0.4/bin"
-                LOG_DIR="C:/projects/qftest/logs"
-                REPORT_DIR="C:/projects/qftest/reports"
+                bat '''
+                set QFTEST_BIN=C:\\Program Files\\QFS\\QF-Test\\qftest-9.0.4\\bin
+                set LOG_DIR=C:\\projects\\qftest\\logs
+                set REPORT_DIR=C:\\projects\\qftest\\reports
 
-                mkdir -p "${LOG_DIR}" "${REPORT_DIR}"
+                if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
+                if not exist "%REPORT_DIR%" mkdir "%REPORT_DIR%"
 
-                "${QFTEST_BIN}" \
-                  -batch \
-                  -runlog "${LOG_DIR}/suite.qrz" \
-                  -report "${REPORT_DIR}" \
-                  "C:/projects/qftest/sauceDemo.qft"
-                """
+                "%QFTEST_BIN%\\qftest.exe" ^
+                  -batch ^
+                  -runlog "%LOG_DIR%\\suite.qrz" ^
+                  -report "%REPORT_DIR%" ^
+                  "C:\\projects\\qftest\\sauceDemo.qft"
+                '''
             }
         }
 
