@@ -23,7 +23,7 @@ pipeline {
         stage('Show separator') {
             steps {
                 script {
-                    def sep = java.io.File.separator
+                    def sep = System.getProperty("file.separator")
                     echo "File separator: '${sep}'"
 
                     def logDir    = "${env.WORKSPACE}${sep}logs"
