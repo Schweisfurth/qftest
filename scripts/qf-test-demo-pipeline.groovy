@@ -33,7 +33,6 @@ pipeline {
         stage('Run QF-Test-Demo') {
             
             steps {
-                println "Verzeichnistrenner: " + System.getProperty("file.separator")
                 bat '''
                 set QFTEST_BIN=C:\\Program Files\\QFS\\QF-Test\\qftest-9.0.4\\bin
                 set LOG_DIR=C:\\projects\\qftest\\logs
@@ -42,7 +41,7 @@ pipeline {
                 if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
                 if not exist "%REPORT_DIR%" mkdir "%REPORT_DIR%"
 
-                "%QFTEST_BIN%\\qftest.exe"  -batch -runlog "%LOG_DIR%\\suite.qrz" -report "%REPORT_DIR%" "%WORKSPACE%\\sauceDemo.qft"
+                "%QFTEST_BIN%\\qftest.exe" -batch -runlog "%LOG_DIR%\\suite.qrz" -report "%REPORT_DIR%" "%WORKSPACE%\\sauceDemo.qft"
                 '''
             }
         }
