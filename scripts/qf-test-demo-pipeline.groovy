@@ -20,9 +20,7 @@ pipeline {
             }
         }
 
-        
-    
-        stage('Run QF-Test-Demo') {
+        stage('Show separator') {
             steps {
                 script {
                     def sep = java.io.File.separator
@@ -35,6 +33,9 @@ pipeline {
                     echo "ReportDir: ${reportDir}"
                 }
             }
+        }
+    
+        stage('Run QF-Test-Demo') {
             
             steps {
                 println "Verzeichnistrenner: " + System.getProperty("file.separator")
