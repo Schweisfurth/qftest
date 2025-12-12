@@ -32,10 +32,10 @@ pipeline {
                 if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
                 if not exist "%REPORT_DIR%" mkdir "%REPORT_DIR%"
 
-                "%QFTEST_BIN%\\qftest.exe" ^
-                  -batch ^
-                  -runlog "%LOG_DIR%\\suite.qrz" ^
-                  -report "%REPORT_DIR%" ^
+                "%QFTEST_BIN%\\qftest.exe" 
+                  -batch 
+                  -runlog "%LOG_DIR%\\suite.qrz" 
+                  -report "%REPORT_DIR%" 
                    "%WORKSPACE%\\sauceDemo.qft"
                 '''
             }
