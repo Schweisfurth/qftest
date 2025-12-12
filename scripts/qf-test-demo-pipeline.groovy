@@ -20,21 +20,16 @@ pipeline {
             }
         }
 
-        stage('Show separator') {
+        stage('Show env') {
             steps {
-                script {
-                    def sep = System.getProperty("file.separator")
-                    echo "File separator: '${sep}'"
-
-                    def logDir    = "${env.WORKSPACE}${sep}logs"
-                    def reportDir = "${env.WORKSPACE}${sep}reports"
-
-                    echo "LogDir: ${logDir}"
-                    echo "ReportDir: ${reportDir}"
-                }
+                bat """
+                echo SHELL: %COMSPEC%
+                echo OS: %OS%
+                echo WORKSPACE: %WORKSPACE%
+                """
             }
-        }
-    
+}
+            
         stage('Run QF-Test-Demo') {
             
             steps {
