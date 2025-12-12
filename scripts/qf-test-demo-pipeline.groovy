@@ -36,7 +36,7 @@ pipeline {
                   -batch ^
                   -runlog "%LOG_DIR%\\suite.qrz" ^
                   -report "%REPORT_DIR%" ^
-                   "%WORKSPACE%\\QF-Test_Demo\\sauceDemo.qft"
+                   "%WORKSPACE%\\sauceDemo.qft"
                 '''
             }
         }
