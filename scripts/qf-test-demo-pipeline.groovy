@@ -23,8 +23,9 @@ pipeline {
         
     
         stage('Run QF-Test-Demo') {
-            println "Verzeichnistrenner: " + java.io.File.separator 
+             
             steps {
+                println "Verzeichnistrenner: " + java.io.File.separator
                 bat '''
                 set QFTEST_BIN=C:\\Program Files\\QFS\\QF-Test\\qftest-9.0.4\\bin
                 set LOG_DIR=C:\\projects\\qftest\\logs
