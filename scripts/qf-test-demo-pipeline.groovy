@@ -23,7 +23,19 @@ pipeline {
         
     
         stage('Run QF-Test-Demo') {
-             
+            steps {
+                script {
+                    def sep = java.io.File.separator
+                    echo "File separator: '${sep}'"
+
+                    def logDir    = "${env.WORKSPACE}${sep}logs"
+                    def reportDir = "${env.WORKSPACE}${sep}reports"
+
+                    echo "LogDir: ${logDir}"
+                    echo "ReportDir: ${reportDir}"
+                }
+            }
+            
             steps {
                 println "Verzeichnistrenner: " + System.getProperty("file.separator")
                 bat '''
