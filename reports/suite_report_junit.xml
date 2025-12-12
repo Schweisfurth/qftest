@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="Donald" name="C:/ProgramData/Jenkins/_jenkins/workspace/QF-Test_Demo/sauceDemo_qft" tests="2" time="11.225" timestamp="2025-12-12 10:09:57">
+<testsuite errors="0" failures="0" hostname="Donald" name="C:/ProgramData/Jenkins/_jenkins/workspace/QF-Test_Demo/sauceDemo_qft" tests="2" time="11.451" timestamp="2025-12-12 10:29:14">
   <properties>
     <property name="relname" value=".../sauceDemo.qft"/>
     <property name="basedir" value=""/>
-    <property name="runid" value="251212100957"/>
-    <property name="execution-date" value="2025-12-12 10:09:57"/>
+    <property name="runid" value="251212102914"/>
+    <property name="execution-date" value="2025-12-12 10:29:14"/>
     <property name="executed-by" value="micha"/>
     <property name="host" value="Donald"/>
     <property name="os-version" value="amd64-Windows 11-10.0"/>
     <property name="java-version" value="17.0.15+6"/>
     <property name="qftest-version" value="9.0.4"/>
   </properties>
-  <testcase name="Login_Logout.Login" time="10.553"/>
-  <testcase name="Login_Logout.Logout" time="0.4"/>
+  <testcase name="Login_Logout.Login" time="10.771"/>
+  <testcase name="Login_Logout.Logout" time="0.412"/>
   <system-out/>
   <system-err/>
 </testsuite>

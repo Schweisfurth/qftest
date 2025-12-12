@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<test-suite basedir="" executed-by="micha" execution-date="2025-12-12 10:09:57" hfile="suite_report.html" host="Donald" java-version="17.0.15+6" name="C:/ProgramData/Jenkins/.jenkins/workspace/QF-Test_Demo/sauceDemo.qft" os-version="amd64-Windows 11-10.0" pstate="0" qftest-build="33564" qftest-version="9.0.4" relname=".../sauceDemo.qft" runid="251212100957" sourcefile=".../suite.qrz" state="0" suitename="" type="qftest" vstate="1" xfile="suite_report.xml">
-  <summary duration="11225" errors="0" exceptions="0" expectederrors="0" realtime="11225" time="2025-12-12 10:09:57" timestamp="1765530597583" warnings="1">
+<test-suite basedir="" executed-by="micha" execution-date="2025-12-12 10:29:14" hfile="suite_report.html" host="Donald" java-version="17.0.15+6" name="C:/ProgramData/Jenkins/.jenkins/workspace/QF-Test_Demo/sauceDemo.qft" os-version="amd64-Windows 11-10.0" pstate="0" qftest-build="33564" qftest-version="9.0.4" relname=".../sauceDemo.qft" runid="251212102914" sourcefile=".../suite.qrz" state="0" suitename="" type="qftest" vstate="1" xfile="suite_report.xml">
+  <summary duration="11451" errors="0" exceptions="0" expectederrors="0" realtime="11451" time="2025-12-12 10:29:14" timestamp="1765531754695" warnings="1">
     <exceptions/>
     <errors/>
     <warnings/>
   </summary>
   <testset implemented="true" name="Login_Logout" nodeid="_1" plainname="Login_Logout" pstate="0" qname="Login_Logout" ref="N66896" state="0" vstate="1">
-    <summary duration="10956" errors="0" exceptions="0" expectederrors="0" realtime="10956" time="10:09:57.600" timestamp="1765530597600" warnings="1">
+    <summary duration="11187" errors="0" exceptions="0" expectederrors="0" realtime="11187" time="10:29:14.718" timestamp="1765531754718" warnings="1">
       <exceptions/>
       <errors/>
       <warnings/>
     </summary>
     <testcase implemented="true" name="Login" nodeid="_2" plainname="Login" pstate="0" qname="Login_Logout.Login" ref="N66930" state="0" vstate="1">
-      <summary duration="10553" errors="0" exceptions="0" expectederrors="0" realtime="10553" time="10:09:57.602" timestamp="1765530597602" warnings="1">
+      <summary duration="10771" errors="0" exceptions="0" expectederrors="0" realtime="10771" time="10:29:14.720" timestamp="1765531754720" warnings="1">
         <exceptions/>
         <errors/>
         <warnings>
           <warning pstate="1" ref="N67100" state="1" vstate="1">
-            <message lines="2">Callback-URL https://localhost:59887/0/1 kann im Browser aus Frame 1 (URL: https://www.saucedemo.com/) heraus nicht aufgerufen werden (Fehler-Wert: "?").
+            <message lines="2">Callback-URL https://localhost:62624/0/1 kann im Browser aus Frame 1 (URL: https://www.saucedemo.com/) heraus nicht aufgerufen werden (Fehler-Wert: "?").
 Einige Funktionen (z.B. Alert-Handling, mehrere Browser-Fenster) stehen nicht zur Verfügung, und die Performanz ist reduziert.</message>
           </warning>
         </warnings>
       </summary>
       <dependency name="dependencies.Vorbereitung" pstate="0" state="0" vstate="1">
-        <summary duration="9801" errors="0" exceptions="0" expectederrors="0" realtime="9801" time="10:09:57.606" timestamp="1765530597606" warnings="1"/>
+        <summary duration="9972" errors="0" exceptions="0" expectederrors="0" realtime="9972" time="10:29:14.725" timestamp="1765531754725" warnings="1"/>
         <warning link="N67100"/>
-        <dependency name="qfs.web.cwr.Basic(www.saucedemo.com, web, false)" namespace="des CustomWebResolvers für &#34;www.saucedemo.com&#34; (web) ID:1jel1dzlmt0s0-0" pstate="0" state="0" vstate="0">
-          <summary duration="2" errors="0" exceptions="0" expectederrors="0" realtime="2" time="10:10:07.289" timestamp="1765530607289" warnings="0"/>
+        <dependency name="qfs.web.cwr.Basic(www.saucedemo.com, web, false)" namespace="des CustomWebResolvers für &#34;www.saucedemo.com&#34; (web) ID:sl64zx3bxctz-0" pstate="0" state="0" vstate="0">
+          <summary duration="2" errors="0" exceptions="0" expectederrors="0" realtime="2" time="10:29:24.589" timestamp="1765531764589" warnings="0"/>
         </dependency>
       </dependency>
     </testcase>
     <testcase implemented="true" name="Logout" nodeid="_r" plainname="Logout" pstate="0" qname="Login_Logout.Logout" ref="N67262" state="0" vstate="0">
-      <summary duration="400" errors="0" exceptions="0" expectederrors="0" realtime="400" time="10:10:08.156" timestamp="1765530608156" warnings="0">
+      <summary duration="412" errors="0" exceptions="0" expectederrors="0" realtime="412" time="10:29:25.492" timestamp="1765531765492" warnings="0">
         <exceptions/>
         <errors/>
         <warnings/>
       </summary>
       <dependency name="dependencies.Vorbereitung" pstate="0" state="0" vstate="0">
-        <summary duration="12" errors="0" exceptions="0" expectederrors="0" realtime="12" time="10:10:08.157" timestamp="1765530608157" warnings="0"/>
+        <summary duration="10" errors="0" exceptions="0" expectederrors="0" realtime="10" time="10:29:25.494" timestamp="1765531765494" warnings="0"/>
       </dependency>
     </testcase>
   </testset>
